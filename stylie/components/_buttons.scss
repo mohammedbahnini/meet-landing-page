@@ -1,0 +1,38 @@
+
+.btn{
+    display: inline-block;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    line-height: 1.625em;
+    padding: 1em 1.8125em;
+    background-color: lightgray;
+    color: black;
+    border-radius: 1.8125rem;
+    cursor: pointer;
+    vertical-align: text-bottom;
+    font-weight: 900;
+    color: $white;
+    transition: background-color .2s linear;
+    &-sm{
+        font-size: .6rem;
+    }
+    &-lg{
+        font-size: 1.2rem;
+    }
+
+    &--cyan{
+        background-color: $dark-cyan;
+        &:hover{
+            background-color: rgba(113, 192, 212, 1);
+        }
+    }
+    &--purple{
+        background-color: $dark-purple;
+        &:hover{
+            background-color: rgba(177, 139, 221, 1);
+        }
+    }
+
+
+}

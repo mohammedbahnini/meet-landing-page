@@ -1,0 +1,84 @@
+* , *::after , *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+    
+}
+
+body {
+    font-family: $font-familly-base ;
+    min-height: 100vh;
+    line-height: 1.5em;
+    background-color: rgba(250, 250, 250, 1);
+}
+a{
+    text-decoration: none;
+}
+
+ul , ol {
+    list-style: none;
+}
+img {
+    display: block;
+    width: 100%;
+}
+
+h1 , h2  , h3 , h4 , h5 , h6{
+    line-height: 1.1em;
+}
+
+
+.container{
+    max-width: calc( 69.375rem + ( #{$container-padding} * 2) );
+    padding: 0 $container-padding;
+    margin: 0 auto ;
+}
+
+/* headings */
+h1 {
+    font-size: 4rem;
+    line-height: 1em;
+    font-weight: 900;
+    color: $dark-blue;
+    @include mq( $tablet-breakpoint ){
+        font-size: 3rem;
+    }
+    @include mq($mobile-breakpoint){
+        font-size: 2.5rem;
+        line-height: 1.1em;
+    }
+}
+
+h2{
+    font-size: 2.5rem;
+    line-height: 1.1em;
+    font-weight: 900;
+    @include mq($mobile-breakpoint){
+        font-size: 2rem;
+        line-height: 1.125em;
+    }
+
+}
+/* overline */
+.overline{
+    font-size: 1rem;
+    line-height: 1.625em;
+    color: $dark-cyan;
+    letter-spacing: 0.25em;
+    font-weight: 900;
+}
+
+/* paragraphs */
+p{
+    font-size: 1.125em;
+    line-height: 1.444444em;
+    color: $light-blue;
+    font-weight: 500;
+    @include mq($tablet-breakpoint){
+        font-size: 1rem;
+    }
+}
