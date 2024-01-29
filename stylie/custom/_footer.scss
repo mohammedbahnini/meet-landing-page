@@ -1,6 +1,9 @@
 footer{
-    background:  url('../../assets/desktop/image-footer.jpg') no-repeat center /  cover ;
+    background:  url('../assets/desktop/image-footer.jpg') no-repeat center /  cover ;
     position: relative;
+    @include mq($mobile-breakpoint){
+        background: url('../assets/mobile/image-footer.jpg') no-repeat center /  cover;
+    }
     &::before{
         content: '';
         width: 100%;

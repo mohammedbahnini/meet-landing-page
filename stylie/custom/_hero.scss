@@ -3,7 +3,7 @@
         position: relative  ;
         &::before{
             content: "";
-            background: url('../../assets/desktop/image-hero-left.png') no-repeat center / 100%;
+            background: url('../assets/desktop/image-hero-left.png') no-repeat center / 100%;
             width: 24.625rem;
             height: 19rem;
             position: absolute;
@@ -13,7 +13,7 @@
         &::after{
             position: absolute;
             content: '';
-            background: url('../../assets/desktop/image-hero-right.png') no-repeat center / 100%;
+            background: url('../assets/desktop/image-hero-right.png') no-repeat center / 100%;
             position: absolute;
             left: calc(100% + 5.5rem);
             bottom: 3rem;
@@ -36,9 +36,8 @@
                 display: block;
                 width: 51.25rem;
                 height: 19rem;
-                background: url('../../assets/tablet/image-hero.png') no-repeat center / 100%;
-                // background-repeat: no-repeat;
-                // background-size: 100%;
+                background: url('../assets/tablet/image-hero.png') no-repeat center / 100%;
+
             }
             &::after{
                 content: '';
@@ -52,7 +51,6 @@
             &::before {
                 width: 25.875rem;
                 height: 9.5625rem;
-                // background-image: url('../../assets/tablet/image-hero.png') no-repeat center / 100%;
             }
         }
 
